@@ -9,9 +9,9 @@
 #import "DrawVideoViewController.h"
 #import "ADInfo.h"
 
-@interface DrawVideoViewController () <SFDrawVideoDelegate ,UITableViewDelegate,UITableViewDataSource>
+@interface DrawVideoViewController () <FLDrawVideoDelegate ,UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong) SFDrawVideoManager *drawVideoManager;
+@property (nonatomic,strong) FLDrawVideoManager *drawVideoManager;
 
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -85,7 +85,7 @@
 - (void)loadAD{
     [self.view endEditing:YES];
     NSLog(@"广告数据：开始请求");
-    self.drawVideoManager = [SFDrawVideoManager new];
+    self.drawVideoManager = [FLDrawVideoManager new];
     self.drawVideoManager.mediaId = draw_video_id;
     self.drawVideoManager.size = self.tableView.bounds.size;
     self.drawVideoManager.adCount = 3;
@@ -94,7 +94,7 @@
     [self.drawVideoManager loadAdData];
 }
 
-#pragma mark SFDrawVideoDelegate
+#pragma mark FLDrawVideoDelegate
 /**
  * 广告数据：加载成功
  */

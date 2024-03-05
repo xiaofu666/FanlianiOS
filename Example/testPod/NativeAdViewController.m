@@ -11,7 +11,7 @@
 #import "ADInfo.h"
 #import "NativeAdTableViewCell.h"
 
-@interface NativeAdViewController ()<UITableViewDelegate,UITableViewDataSource,SFNativeDelegate>
+@interface NativeAdViewController ()<UITableViewDelegate,UITableViewDataSource,FLNativeDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;

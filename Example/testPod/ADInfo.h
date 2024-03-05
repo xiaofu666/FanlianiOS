@@ -8,7 +8,7 @@
 #ifndef ADInfo_h
 #define ADInfo_h
 
-#import <MSaas/MSaas.h>
+#import <FLAdSaas/FLAdSaas.h>
 
 // com.medpro.ios
 #define app_id                  @"294f913371434775"
@@ -24,7 +24,7 @@
 #define natives_id              @"5bea84e52ecdc13a"
 
 
-#define SF_ScreenW    [UIScreen mainScreen].bounds.size.width
-#define SF_ScreenH    [UIScreen mainScreen].bounds.size.height
+#define FL_ScreenW    [UIScreen mainScreen].bounds.size.width
+#define FL_ScreenH    [UIScreen mainScreen].bounds.size.height
 
 #endif /* ADInfo_h */

@@ -9,9 +9,9 @@
 #import "MotivationVideoViewController.h"
 #import "ADInfo.h"
 
-@interface MotivationVideoViewController ()<SFRewardVideoDelegate>
+@interface MotivationVideoViewController ()<FLRewardVideoDelegate>
 
-@property (nonatomic, strong) SFRewardVideoManager * motivationVideo;
+@property (nonatomic, strong) FLRewardVideoManager * motivationVideo;
 
 @end
 
@@ -40,7 +40,7 @@
 - (void)loadRewardedVideo
 {
     NSLog(@"激励视频广告请求");
-    self.motivationVideo = [SFRewardVideoManager new];
+    self.motivationVideo = [FLRewardVideoManager new];
     self.motivationVideo.mediaId = reward_video_id;
     self.motivationVideo.delegate = self;
     [self.motivationVideo loadAdDataWithExtra:nil];

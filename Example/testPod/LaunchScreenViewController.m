@@ -9,9 +9,9 @@
 #import "LaunchScreenViewController.h"
 #import "ADInfo.h"
 
-@interface LaunchScreenViewController ()<SFSplashDelegate>
+@interface LaunchScreenViewController ()<FLSplashDelegate>
 
-@property (nonatomic, strong) SFSplashManager *manager;
+@property (nonatomic, strong) FLSplashManager *manager;
 
 @end
 
@@ -36,7 +36,7 @@
 - (void)launchScreenBtnClicked:(UIButton*)sender
 {
     NSLog(@"开始请求开屏广告");
-    _manager = [SFSplashManager new];
+    _manager = [FLSplashManager new];
     _manager.delegate = self;
     _manager.mediaId = splash_id;
     [_manager loadAdData];

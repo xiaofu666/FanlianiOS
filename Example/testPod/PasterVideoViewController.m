@@ -8,9 +8,9 @@
 #import "PasterVideoViewController.h"
 #import "ADInfo.h"
 
-@interface PasterVideoViewController () <SFFeedDelegate>
+@interface PasterVideoViewController () <FLFeedDelegate>
 
-@property (nonatomic,strong) SFFeedManager *feedManager;
+@property (nonatomic,strong) FLFeedManager *feedManager;
 @property (nonatomic,strong) UIImageView *videoView;
 @property (nonatomic, strong) UILabel *timeView;
 @property (nonatomic, strong) NSTimer *timer;
@@ -69,7 +69,7 @@
     [self removeVideoView];
     
     NSLog(@"贴片广告：开始请求");
-    self.feedManager = [[SFFeedManager alloc] init];
+    self.feedManager = [[FLFeedManager alloc] init];
     self.feedManager.mediaId = paster_id;
     self.feedManager.adCount = 1;
     self.feedManager.showAdController = self;
@@ -102,8 +102,8 @@
     } else {
         [sender setTitle:[NSString stringWithFormat:@"声音控制(有声)"] forState:UIControlStateNormal];
     }
-    //声音控制 MSaasGdtEnableSwitchKey：YES：静音； NO：有声
-    [[NSNotificationCenter defaultCenter] postNotificationName:MSaasGdtMuteEnable object:nil userInfo:@{MSaasGdtEnableSwitchKey:@(sender.selected)}];
+    //声音控制 FLAdSaasGdtEnableSwitchKey：YES：静音； NO：有声
+    [[NSNotificationCenter defaultCenter] postNotificationName:FLAdSaasVideoMuteEnable object:nil userInfo:@{FLAdSaasVideoEnableSwitchKey:@(sender.selected)}];
 }
 - (void)playEnableWithSender:(UIButton *)sender{
     sender.selected = !sender.selected;
@@ -114,18 +114,18 @@
         [sender setTitle:[NSString stringWithFormat:@"播放控制(暂停)"] forState:UIControlStateNormal];
         self.timer.fireDate = [NSDate distantFuture];
     }
-    //播放控制 MSaasGdtEnableSwitchKey：YES：播放； NO：暂停
-    [[NSNotificationCenter defaultCenter] postNotificationName:MSaasGdtPlayEnable object:nil userInfo:@{MSaasGdtEnableSwitchKey:@(sender.selected)}];
+    //播放控制 FLAdSaasGdtEnableSwitchKey：YES：播放； NO：暂停
+    [[NSNotificationCenter defaultCenter] postNotificationName:FLAdSaasVideoPlayEnable object:nil userInfo:@{FLAdSaasVideoEnableSwitchKey:@(sender.selected)}];
 }
 
 #pragma mark FeedAd delegate
 /**
  * 广告数据：加载成功
  */
-- (void)feedAdDidLoadDatas:(NSArray<__kindof SFFeedAdData *> *)datas{
+- (void)feedAdDidLoadDatas:(NSArray<__kindof FLFeedAdData *> *)datas{
     NSLog(@"贴片广告：加载成功");
     if (datas.count > 0) {
-        SFFeedAdData *model = datas.firstObject;
+        FLFeedAdData *model = datas.firstObject;
         NSLog(@"视频时长：%f",model.videoDuration);
         self.videoDuration = model.videoDuration;
         [self.view addSubview:self.videoView];

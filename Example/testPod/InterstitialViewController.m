@@ -9,9 +9,9 @@
 #import "InterstitialViewController.h"
 #import "ADInfo.h"
 
-@interface InterstitialViewController ()<SFInterstitialDelegate>
+@interface InterstitialViewController ()<FLInterstitialDelegate>
 
-@property (nonatomic, strong) SFInterstitialManager *interstitialAd;
+@property (nonatomic, strong) FLInterstitialManager *interstitialAd;
 
 @end
 
@@ -30,7 +30,7 @@
 - (void)interstitialAdBtnClicked:(UIButton*)button
 {
     NSLog(@"插屏广告请求");
-    self.interstitialAd = [SFInterstitialManager new];
+    self.interstitialAd = [FLInterstitialManager new];
     self.interstitialAd.mediaId = interstitial_id;
     self.interstitialAd.showAdController = self.navigationController;
     self.interstitialAd.delegate = self;

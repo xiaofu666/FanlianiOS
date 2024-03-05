@@ -1,26 +1,26 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'testPod' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Mediatom
-  pod 'MediatomiOS'
+  # FLAD
+  pod 'FLAD'
 
   # 以下按需导入
   
   # 穿山甲
-  pod 'MediatomiOS/SFAdCsjAdapter'
+  pod 'FLAD/FLAdCsjAdapter'
   
   # 优量汇
-  pod 'MediatomiOS/SFAdGdtAdapter'
+  pod 'FLAD/FLAdGdtAdapter'
   
   # 快手联盟
-  pod 'MediatomiOS/SFAdKsAdapter'
+  pod 'FLAD/FLAdKsAdapter'
   
   # 百度
-  pod 'MediatomiOS/SFAdBaiduAdapter'
+  pod 'FLAD/FLAdBaiduAdapter'
 
 end
 post_install do |installer|

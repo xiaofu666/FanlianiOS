@@ -9,9 +9,9 @@
 #import "FullscreenVideoViewController.h"
 #import "ADInfo.h"
 
-@interface FullscreenVideoViewController ()<SFFullscreenVideoDelegate>
+@interface FullscreenVideoViewController ()<FLFullscreenVideoDelegate>
 
-@property (nonatomic, strong) SFFullscreenVideoManager * motivationVideo;
+@property (nonatomic, strong) FLFullscreenVideoManager * motivationVideo;
 
 @end
 
@@ -40,7 +40,7 @@
 - (void)loadRewardedVideo
 {
     NSLog(@"全屏视频广告请求");
-    self.motivationVideo = [SFFullscreenVideoManager new];
+    self.motivationVideo = [FLFullscreenVideoManager new];
     self.motivationVideo.mediaId = fullscreen_video_id;
     self.motivationVideo.delegate = self;
     [self.motivationVideo loadAdDataWithExtra:nil];

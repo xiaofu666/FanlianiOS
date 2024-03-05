@@ -24,14 +24,14 @@
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
-    [SFAdSDKManager registerAppId:app_id];
+    [FLAdSDKManager registerAppId:app_id];
     
     [self requestAD];
     return YES;
 }
 
 - (void)requestAD{
-    [self.window showSplashADWithConfig:^(SFSplashADConfig * _Nonnull config) {
+    [self.window fl_showSplashADWithConfig:^(FLSplashADConfig * _Nonnull config) {
         UIImage *splashBg = [UIImage imageNamed:@"splashBg"];
         config.mediaID = splash_id;
         config.backgroundImage = splashBg;
@@ -39,22 +39,28 @@
         config.contentMode = UIViewContentModeScaleAspectFit;
         config.timeout = 5.0;
         config.bottomView = [[UIImageView alloc] initWithImage:splashBg];
-    } completion:^(SFSplashADType type) {
+    } completion:^(FLSplashADType type, NSError *error) {
         switch (type) {
-            case SFSplashADTypeStart:
+            case FLSplashADTypeStart:
+                NSLog(@"Block方式：开始广告流程开始");
+                break;
+            case FLSplashADTypeRequestAD:
                 NSLog(@"Block方式：开始请求广告");
                 break;
-            case SFSplashADTypeLoadAD:
+            case FLSplashADTypeLoadAD:
                 NSLog(@"Block方式：广告加载成功");
                 break;
-            case SFSplashADTypeFail:
+            case FLSplashADTypeFail:
                 NSLog(@"Block方式：广告加载失败");
                 break;
-            case SFSplashADTypeClick:
+            case FLSplashADTypeShow:
+                NSLog(@"Block方式：广告展示");
+                break;
+            case FLSplashADTypeClick:
                 NSLog(@"Block方式：广告点击");
                 break;
-            case SFSplashADTypeClose:
-                NSLog(@"Block方式：广告关闭");
+            case FLSplashADTypeClose:
+                NSLog(@"Block方式：开始广告流程结束");
                 break;
                 
             default:

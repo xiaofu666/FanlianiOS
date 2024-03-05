@@ -9,9 +9,9 @@
 #import "HalfLaunchScreenViewController.h"
 #import "ADInfo.h"
 
-@interface HalfLaunchScreenViewController ()<SFSplashDelegate>
+@interface HalfLaunchScreenViewController ()<FLSplashDelegate>
 
-@property (nonatomic, strong) SFSplashManager *manager;
+@property (nonatomic, strong) FLSplashManager *manager;
 
 @end
 
@@ -43,7 +43,7 @@
     bottom.userInteractionEnabled = YES;
     bottom.backgroundColor = [UIColor whiteColor];
     
-    SFSplashManager *manager = [SFSplashManager new];
+    FLSplashManager *manager = [FLSplashManager new];
     manager.delegate = self;
     manager.mediaId = splash_id;
     manager.bottomView = bottom; //bottom 为含logo的view

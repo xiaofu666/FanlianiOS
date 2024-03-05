@@ -9,11 +9,11 @@
 #import "NativeAdTableViewCell.h"
 #import "ADInfo.h"
 
-@interface NativeAdTableViewCell ()<SFNativeDelegate>
+@interface NativeAdTableViewCell ()<FLNativeDelegate>
 
-@property (nonatomic, strong) SFNativeManager *nativeManager;
-@property (nonatomic, strong) SFFeedAdData *adData;
-@property (nonatomic, strong) SFTemplateAdView *adView;
+@property (nonatomic, strong) FLNativeManager *nativeManager;
+@property (nonatomic, strong) FLFeedAdData *adData;
+@property (nonatomic, strong) FLTemplateAdView *adView;
 
 @end
 
@@ -30,23 +30,23 @@
 }
 
 - (void)loadAD{
-    SFNativeManager *manager = [[SFNativeManager alloc] init];
+    FLNativeManager *manager = [[FLNativeManager alloc] init];
     manager.mediaId = self.placeId;
     manager.adCount = 1;
-    manager.size = CGSizeMake(SF_ScreenW, 0);
+    manager.size = CGSizeMake(FL_ScreenW, 0);
     manager.showAdController = self.showAdController;
     manager.delegate = self;
-    [manager setTheme:SFTemplateExpressNativeNormalTheme];
+    [manager setTheme:FLTemplateExpressNativeNormalTheme];
     [manager loadAdData];
     self.nativeManager = manager;
 }
-/// MARK: SFNativeDelegate 代理回调
+/// MARK: FLNativeDelegate 代理回调
 /**
  * 广告数据：加载成功
  */
-- (void)nativeAdDidLoadDatas:(NSArray<__kindof SFFeedAdData *> *)datas{
+- (void)nativeAdDidLoadDatas:(NSArray<__kindof FLFeedAdData *> *)datas{
     NSLog(@"广告数据：加载成功  %zd",datas.count);
-    SFFeedAdData *adData = datas.firstObject;
+    FLFeedAdData *adData = datas.firstObject;
     //请求单个广告示例
     self.adData = adData;
     if (adData.adView) {
@@ -56,7 +56,7 @@
     } else {
         adData.isRenderImage = YES;
         /// 使用 SDK 自带模版渲染广告示例
-        SFTemplateAdView *adView = [[SFTemplateAdView alloc] initWithFrame:CGRectMake(0, 0, self.adBackView.frame.size.width, 0) Model:adData Style:SFTemplateStyleLIRT LRMargin:0 TBMargin:0];
+        FLTemplateAdView *adView = [[FLTemplateAdView alloc] initWithFrame:CGRectMake(0, 0, self.adBackView.frame.size.width, 0) Model:adData Style:FLTemplateStyleLIRT LRMargin:0 TBMargin:0];
         [self.adBackView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
         [self.adBackView addSubview:adView];
         self.adView = adView;
@@ -112,7 +112,7 @@
  * 视频广告播放状态更改回调
  * @param status 视频广告播放状态
  */
-- (void)nativeAdVideoPlayerStatusChanged:(SFMediaPlayerStatus)status{
+- (void)nativeAdVideoPlayerStatusChanged:(FLMediaPlayerStatus)status{
     NSLog(@"广告数据：视频广告播放状态更改回调 %d", (int)status);
 }
 /**
