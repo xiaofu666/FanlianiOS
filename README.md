@@ -69,8 +69,8 @@ end
 |Vungle|      pod 'FLAD/FLAdVungleAdapter' |
 |Tanx|        pod 'FLAD/FLAdTbAdapter' |
 |UnityAds|    pod 'FLAD/FLAdUnityAdapter' |
-|TopOn|       pod 'FLAD/FLAdTopOnAdapter' |
 |AdApplovin|  pod 'FLAD/FLAdApplovinAdapter' |
+|...|  pod 'FLAD/FLAd...Adapter' |
 
 
 然后，运行以下命令：

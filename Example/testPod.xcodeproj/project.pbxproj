@@ -100,6 +100,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E701A4A92BD8E24900BA3BD5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E78CDF0C2897B85400B0E5AA /* FullscreenVideoViewController.h */,
+				E78CDF0A2897B85400B0E5AA /* FullscreenVideoViewController.m */,
+				E78CDF012897B85400B0E5AA /* PasterVideoViewController.h */,
+				E78CDF082897B85400B0E5AA /* PasterVideoViewController.m */,
+				E7504A682A4E7F00000B5376 /* DrawVideoViewController.h */,
+				E7504A672A4E7F00000B5376 /* DrawVideoViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		E78CDED42897AD4F00B0E5AA = {
 			isa = PBXGroup;
 			children = (
@@ -134,14 +147,8 @@
 				E78CDEFA2897B85400B0E5AA /* InterstitialViewController.m */,
 				E78CDEFF2897B85400B0E5AA /* BannerViewController.h */,
 				E78CDEFC2897B85400B0E5AA /* BannerViewController.m */,
-				E78CDF0C2897B85400B0E5AA /* FullscreenVideoViewController.h */,
-				E78CDF0A2897B85400B0E5AA /* FullscreenVideoViewController.m */,
 				E78CDF112897B85500B0E5AA /* MotivationVideoViewController.h */,
 				E78CDF032897B85400B0E5AA /* MotivationVideoViewController.m */,
-				E78CDF012897B85400B0E5AA /* PasterVideoViewController.h */,
-				E78CDF082897B85400B0E5AA /* PasterVideoViewController.m */,
-				E7504A682A4E7F00000B5376 /* DrawVideoViewController.h */,
-				E7504A672A4E7F00000B5376 /* DrawVideoViewController.m */,
 				E75049D72A4C288B000B5376 /* NativeAdTableViewCell.h */,
 				E75049DA2A4C288B000B5376 /* NativeAdTableViewCell.m */,
 				E75049D92A4C288B000B5376 /* NativeAdTableViewCell.xib */,
@@ -149,6 +156,7 @@
 				E75049DB2A4C288B000B5376 /* NativeAdViewController.m */,
 				E78CDEFE2897B85400B0E5AA /* IDFAViewController.h */,
 				E78CDF0B2897B85400B0E5AA /* IDFAViewController.m */,
+				E701A4A92BD8E24900BA3BD5 /* Other */,
 				E73A7D852923A8B700B9A9B3 /* File.swift */,
 				E78CDEE92897AD4F00B0E5AA /* Main.storyboard */,
 				E78CDEEC2897AD6500B0E5AA /* Assets.xcassets */,
@@ -171,8 +179,6 @@
 				E78CDED92897AD4F00B0E5AA /* Sources */,
 				E78CDEDA2897AD4F00B0E5AA /* Frameworks */,
 				E78CDEDB2897AD4F00B0E5AA /* Resources */,
-				F34572A51380392D9BE9DB15 /* [CP] Embed Pods Frameworks */,
-				5B2B9BAB231CA7D7D03BCF5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,23 +237,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B2B9BAB231CA7D7D03BCF5C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CE7042EA3E5252F682683E9B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,23 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F34572A51380392D9BE9DB15 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testPod/Pods-testPod-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -384,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -466,7 +438,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +476,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

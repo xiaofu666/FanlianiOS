@@ -65,7 +65,7 @@
 /**
  * 广告视图：关闭
  */
-- (void)interstitialAdDidClose{
+- (void)interstitialAdDidAutoClose:(BOOL)autoClose{
     NSLog(@"插屏广告关闭");
 }
 

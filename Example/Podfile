@@ -7,20 +7,7 @@ target 'testPod' do
 
   # FLAD
   pod 'FLAD'
-
-  # 以下按需导入
   
-  # 穿山甲
-  pod 'FLAD/FLAdCsjAdapter'
-  
-  # 优量汇
-  pod 'FLAD/FLAdGdtAdapter'
-  
-  # 快手联盟
-  pod 'FLAD/FLAdKsAdapter'
-  
-  # 百度
-  pod 'FLAD/FLAdBaiduAdapter'
 
 end
 post_install do |installer|
