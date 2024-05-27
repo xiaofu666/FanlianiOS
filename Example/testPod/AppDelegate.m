@@ -39,8 +39,8 @@
         config.contentMode = UIViewContentModeScaleAspectFit;
         config.timeout = 5.0;
         config.bottomView = [[UIImageView alloc] initWithImage:splashBg];
-    } completion:^(FLSplashADType type, NSError *error) {
-        switch (type) {
+    } completion:^(FLSplashResultInfo * _Nonnull result) {
+        switch (result.type) {
             case FLSplashADTypeStart:
                 NSLog(@"Block方式：开始广告流程开始");
                 break;

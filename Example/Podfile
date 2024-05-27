@@ -7,6 +7,10 @@ target 'testPod' do
 
   # FLAD
   pod 'FLAD'
+
+  pod 'FLAD/FLAdHrAdapter'
+
+  pod 'FLAD/FLAdLyAdapter'
   
 
 end
