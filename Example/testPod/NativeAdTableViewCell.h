@@ -15,6 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *closeBtn;
 @property (weak, nonatomic) IBOutlet UIView *adBackView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *mainAdImageView;
+@property (weak, nonatomic) IBOutlet UIButton *clickButton;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *adLogo;
+
+
 @property (nonatomic) CGFloat cellHeight;
 
 

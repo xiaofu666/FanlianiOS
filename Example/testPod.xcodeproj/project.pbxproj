@@ -12,7 +12,6 @@
 		E75049DC2A4C288C000B5376 /* NativeAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75049D92A4C288B000B5376 /* NativeAdTableViewCell.xib */; };
 		E75049DD2A4C288C000B5376 /* NativeAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E75049DA2A4C288B000B5376 /* NativeAdTableViewCell.m */; };
 		E75049DE2A4C288C000B5376 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75049DB2A4C288B000B5376 /* NativeAdViewController.m */; };
-		E7504A692A4E7F00000B5376 /* DrawVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7504A672A4E7F00000B5376 /* DrawVideoViewController.m */; };
 		E78CDEEB2897AD4F00B0E5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78CDEE92897AD4F00B0E5AA /* Main.storyboard */; };
 		E78CDEED2897AD6500B0E5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78CDEEC2897AD6500B0E5AA /* Assets.xcassets */; };
 		E78CDEF02897AD6600B0E5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78CDEEE2897AD6600B0E5AA /* LaunchScreen.storyboard */; };
@@ -24,8 +23,6 @@
 		E78CDF1B2897B85500B0E5AA /* HalfLaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDEFD2897B85400B0E5AA /* HalfLaunchScreenViewController.m */; };
 		E78CDF1C2897B85500B0E5AA /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDF002897B85400B0E5AA /* LaunchScreenViewController.m */; };
 		E78CDF1D2897B85500B0E5AA /* MotivationVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDF032897B85400B0E5AA /* MotivationVideoViewController.m */; };
-		E78CDF212897B85500B0E5AA /* PasterVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDF082897B85400B0E5AA /* PasterVideoViewController.m */; };
-		E78CDF222897B85500B0E5AA /* FullscreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDF0A2897B85400B0E5AA /* FullscreenVideoViewController.m */; };
 		E78CDF232897B85500B0E5AA /* IDFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78CDF0B2897B85400B0E5AA /* IDFAViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +37,6 @@
 		E75049D92A4C288B000B5376 /* NativeAdTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdTableViewCell.xib; sourceTree = "<group>"; };
 		E75049DA2A4C288B000B5376 /* NativeAdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAdTableViewCell.m; sourceTree = "<group>"; };
 		E75049DB2A4C288B000B5376 /* NativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAdViewController.m; sourceTree = "<group>"; };
-		E7504A672A4E7F00000B5376 /* DrawVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawVideoViewController.m; sourceTree = "<group>"; };
-		E7504A682A4E7F00000B5376 /* DrawVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawVideoViewController.h; sourceTree = "<group>"; };
 		E78CDEDD2897AD4F00B0E5AA /* testPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78CDEEA2897AD4F00B0E5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E78CDEEC2897AD6500B0E5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,13 +51,9 @@
 		E78CDEFE2897B85400B0E5AA /* IDFAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDFAViewController.h; sourceTree = "<group>"; };
 		E78CDEFF2897B85400B0E5AA /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		E78CDF002897B85400B0E5AA /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
-		E78CDF012897B85400B0E5AA /* PasterVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasterVideoViewController.h; sourceTree = "<group>"; };
 		E78CDF022897B85400B0E5AA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E78CDF032897B85400B0E5AA /* MotivationVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotivationVideoViewController.m; sourceTree = "<group>"; };
-		E78CDF082897B85400B0E5AA /* PasterVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasterVideoViewController.m; sourceTree = "<group>"; };
-		E78CDF0A2897B85400B0E5AA /* FullscreenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullscreenVideoViewController.m; sourceTree = "<group>"; };
 		E78CDF0B2897B85400B0E5AA /* IDFAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDFAViewController.m; sourceTree = "<group>"; };
-		E78CDF0C2897B85400B0E5AA /* FullscreenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenVideoViewController.h; sourceTree = "<group>"; };
 		E78CDF0D2897B85400B0E5AA /* ADInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADInfo.h; sourceTree = "<group>"; };
 		E78CDF0E2897B85400B0E5AA /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
 		E78CDF112897B85500B0E5AA /* MotivationVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotivationVideoViewController.h; sourceTree = "<group>"; };
@@ -98,19 +89,6 @@
 				0F152B62801D55FCA81A111E /* Pods_testPod.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E701A4A92BD8E24900BA3BD5 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E78CDF0C2897B85400B0E5AA /* FullscreenVideoViewController.h */,
-				E78CDF0A2897B85400B0E5AA /* FullscreenVideoViewController.m */,
-				E78CDF012897B85400B0E5AA /* PasterVideoViewController.h */,
-				E78CDF082897B85400B0E5AA /* PasterVideoViewController.m */,
-				E7504A682A4E7F00000B5376 /* DrawVideoViewController.h */,
-				E7504A672A4E7F00000B5376 /* DrawVideoViewController.m */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		E78CDED42897AD4F00B0E5AA = {
@@ -156,11 +134,10 @@
 				E75049DB2A4C288B000B5376 /* NativeAdViewController.m */,
 				E78CDEFE2897B85400B0E5AA /* IDFAViewController.h */,
 				E78CDF0B2897B85400B0E5AA /* IDFAViewController.m */,
-				E701A4A92BD8E24900BA3BD5 /* Other */,
 				E73A7D852923A8B700B9A9B3 /* File.swift */,
 				E78CDEE92897AD4F00B0E5AA /* Main.storyboard */,
-				E78CDEEC2897AD6500B0E5AA /* Assets.xcassets */,
 				E78CDEEE2897AD6600B0E5AA /* LaunchScreen.storyboard */,
+				E78CDEEC2897AD6500B0E5AA /* Assets.xcassets */,
 				E78CDEF12897AD6600B0E5AA /* Info.plist */,
 				E78CDEF22897AD6600B0E5AA /* main.m */,
 				E73A7D842923A8B700B9A9B3 /* testPod-Bridging-Header.h */,
@@ -268,12 +245,9 @@
 			files = (
 				E78CDF192897B85500B0E5AA /* AppDelegate.m in Sources */,
 				E75049DD2A4C288C000B5376 /* NativeAdTableViewCell.m in Sources */,
-				E7504A692A4E7F00000B5376 /* DrawVideoViewController.m in Sources */,
 				E78CDF1C2897B85500B0E5AA /* LaunchScreenViewController.m in Sources */,
 				E78CDF1D2897B85500B0E5AA /* MotivationVideoViewController.m in Sources */,
-				E78CDF212897B85500B0E5AA /* PasterVideoViewController.m in Sources */,
 				E73A7D862923A8B700B9A9B3 /* File.swift in Sources */,
-				E78CDF222897B85500B0E5AA /* FullscreenVideoViewController.m in Sources */,
 				E78CDF172897B85500B0E5AA /* ViewController.m in Sources */,
 				E78CDF182897B85500B0E5AA /* InterstitialViewController.m in Sources */,
 				E78CDF232897B85500B0E5AA /* IDFAViewController.m in Sources */,

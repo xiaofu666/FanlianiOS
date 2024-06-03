@@ -8,9 +8,85 @@ target 'testPod' do
   # FLAD
   pod 'FLAD'
 
-  pod 'FLAD/FLAdHrAdapter'
+  # 以下按需导入
+  
+  # 穿山甲
+  # pod 'FLAD/FLAdCsjAdapter'
+  
+  # 优量汇
+  # pod 'FLAD/FLAdGdtAdapter'
+  
+  # 快手联盟
+  # pod 'FLAD/FLAdKsAdapter'
+  
+  # 百度
+  # pod 'FLAD/FLAdBaiduAdapter'
+  
+  # 京准通
+  # pod 'FLAD/FLAdJztAdapter'
+  
+  # 汇盈
+  # pod 'FLAD/FLAdHrAdapter'
+  
+  # 天目
+  # pod 'FLAD/FLAdTmAdapter'
+  
+  # 章鱼
+  # pod 'FLAD/FLAdZyAdapter'
+  
+  # 优推
+  # pod 'FLAD/FLAdYtAdapter'
+  
+  # 科大讯飞
+  # pod 'FLAD/FLAdKdxfAdapter'
+  
+  # Beizi
+  # pod 'FLAD/FLAdBeiziAdapter'
+  
+  # Meishu
+  # pod 'FLAD/FLAdMsAdapter'
+  
+  # Sigmob
+  # pod 'FLAD/FLAdSigmobAdapter'
+  
+  # Mintegral
+  # pod 'FLAD/FLAdMtgAdapter'
+  
+  # Pangle
+  # pod 'FLAD/FLAdPangleAdapter'
+  
+  # AdMob
+  # pod 'FLAD/FLAdMobAdapter'
+  
+  # Meta
+  # pod 'FLAD/FLAdMetaAdapter'
+  
+  # Vungle
+  # pod 'FLAD/FLAdVungleAdapter'
+  
+  # Tanx
+  # pod 'FLAD/FLAdTbAdapter'
+  
+  # UnityAds
+  # pod 'FLAD/FLAdUnityAdapter'
+  
+  # Applovin
+  # pod 'FLAD/FLAdApplovinAdapter'
 
-  pod 'FLAD/FLAdLyAdapter'
+  # Ironsource
+  # pod 'FLAD/FLAdIronsourceAdapter'
+
+  # Inmobi
+  # pod 'FLAD/FLAdInmobiAdapter'
+
+  # Bigo
+  # pod 'FLAD/FLAdBigoAdapter'
+  
+  # TopOn
+  # pod 'FLAD/FLAdTnAdapter'
+  
+  # TradPlus
+  # pod 'FLAD/FLAdTpAdapter'
   
 
 end

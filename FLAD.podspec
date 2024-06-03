@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FLAD"
-  s.version      = "2.7.7.6"
+  s.version      = "2.7.7.7"
   s.summary      = "Mobile App Aggregation Ad SDK of Fanlian SDK for iOS."
   s.description  = <<-DESC
             Fanlian SDK is an advertising aggregation SDK that allows you to monetize iOS applications through Mediatom advertising.
@@ -133,11 +133,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdMtgAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'MintegralAdSDK/All', '7.5.7'
-    ss.dependency 'AppLovinMediationMintegralAdapter', '7.5.7.0.0'
-    ss.dependency 'TradPlusAdSDK/MintegralAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkMintegralAdapter', '6.3.20'
-    ss.dependency 'GoogleMobileAdsMediationMintegral', '7.5.7.0'
+    ss.dependency 'MintegralAdSDK/All', '7.6.3'
+    ss.dependency 'AppLovinMediationMintegralAdapter', '7.6.3.0.0'
+    ss.dependency 'TradPlusAdSDK/MintegralAdapter', '11.3.0'
+    ss.dependency 'TPNMintegralSDKAdapter','6.3.50.2'
+    ss.dependency 'GoogleMobileAdsMediationMintegral', '7.6.3.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
@@ -147,11 +147,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdPangleAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'Ads-Global', '5.8.0.8'
-    ss.dependency 'AppLovinMediationByteDanceAdapter', '5.8.0.8.1'
-    ss.dependency 'TradPlusAdSDK/PangleAdapter', '11.2.0'
-    ss.dependency 'AnyThinkPangleSDKAdapter', '6.3.20.1'
-    ss.dependency 'GoogleMobileAdsMediationPangle', '5.8.0.8.0'
+    ss.dependency 'Ads-Global', '5.9.0.7'
+    ss.dependency 'AppLovinMediationByteDanceAdapter', '5.9.0.7.0'
+    ss.dependency 'TradPlusAdSDK/PangleAdapter', '11.3.0'
+    ss.dependency 'TPNPangleSDKAdapter', '6.3.50.2'
+    ss.dependency 'GoogleMobileAdsMediationPangle', '5.9.0.7.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
@@ -163,8 +163,8 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '12.0'
     ss.dependency 'FBAudienceNetwork', '6.15.0'
     ss.dependency 'AppLovinMediationFacebookAdapter', '6.15.0.0'
-    ss.dependency 'TradPlusAdSDK/FacebookAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkFacebookAdapter', '6.3.20'
+    ss.dependency 'TradPlusAdSDK/FacebookAdapter', '11.3.0'
+    ss.dependency 'TPNFacebookSDKAdapter', '6.3.50'
     ss.dependency 'GoogleMobileAdsMediationFacebook', '6.15.0.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
@@ -175,11 +175,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdVungleAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'VungleAds', '7.2.2'
-    ss.dependency 'AppLovinMediationVungleAdapter', '7.2.2.0'
-    ss.dependency 'TradPlusAdSDK/VungleAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkVungleAdapter', '6.3.20'
-    ss.dependency 'GoogleMobileAdsMediationVungle', '7.2.2.1'
+    ss.dependency 'VungleAds', '7.3.1'
+    ss.dependency 'AppLovinMediationVungleAdapter', '7.3.1.0'
+    ss.dependency 'TradPlusAdSDK/VungleAdapter', '11.3.0'
+    ss.dependency 'TPNVungleSDKAdapter', '6.3.50.2'
+    ss.dependency 'GoogleMobileAdsMediationVungle', '7.3.1.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
@@ -189,11 +189,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdInmobiAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'InMobiSDK', '10.7.1'
-    ss.dependency 'AppLovinMediationInMobiAdapter', '10.7.1.0'
-    ss.dependency 'TradPlusAdSDK/InMobiAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkInmobiAdapter', '6.3.20'
-    ss.dependency 'GoogleMobileAdsMediationInMobi', '10.7.1.0'
+    ss.dependency 'InMobiSDK', '10.7.2'
+    ss.dependency 'AppLovinMediationInMobiAdapter', '10.7.2.0'
+    ss.dependency 'TradPlusAdSDK/InMobiAdapter', '11.3.0'
+    ss.dependency 'TPNInmobiSDKAdapter', '6.3.50'
+    ss.dependency 'GoogleMobileAdsMediationInMobi', '10.7.2.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
@@ -203,10 +203,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdMobAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'Google-Mobile-Ads-SDK', '11.2.0'
-    ss.dependency 'AppLovinMediationGoogleAdapter', '11.2.0.1'
-    ss.dependency 'TradPlusAdSDK/AdMobAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkAdmobAdapter', '6.3.20'
+    ss.dependency 'Google-Mobile-Ads-SDK', '11.3.0'
+    ss.dependency 'AppLovinMediationGoogleAdapter', '11.3.0.0'
+    ss.dependency 'TradPlusAdSDK/AdMobAdapter', '11.3.0'
+    ss.dependency 'TPNAdmobSDKAdapter', '6.3.50.2'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
@@ -216,38 +216,44 @@ Pod::Spec.new do |s|
   
   s.subspec 'FLAdApplovinAdapter' do |ss|
     ss.ios.deployment_target = '12.0'
-    ss.dependency 'AppLovinSDK', '12.3.1'
-    ss.dependency 'TradPlusAdSDK/AppLovinAdapter', '11.2.0'
-    ss.dependency 'AnyThinkiOS/AnyThinkApplovinAdapter', '6.3.20'
-    ss.dependency 'SFGAppLovinAdapter'
+    ss.dependency 'AppLovinSDK', '12.4.2'
+    ss.dependency 'TradPlusAdSDK/AppLovinAdapter', '11.3.0'
+    ss.dependency 'TPNApplovinSDKAdapter', '6.3.50.2'
+    ss.dependency 'GoogleMobileAdsMediationAppLovin', '12.4.2.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.dependency 'FLAD/FLAdTopOnAdapter'
     ss.dependency 'FLAD/FLAdTpAdapter'
     ss.vendored_frameworks = 'FLAD/FLAdApplovinAdapter.xcframework'
   end
   
+  s.subspec 'FLAdBigoAdapter' do |ss|
+    ss.ios.deployment_target = '10.0'
+    ss.dependency 'BigoADS', '4.2.3'
+    ss.dependency 'TradPlusAdSDK/BigoAdapter', '11.3.0'
+    ss.dependency 'TPNBigoSDKAdapter', '6.3.50.2'
+    ss.dependency 'FLAD/FLAdSaas'
+    ss.dependency 'FLAD/FLAdTopOnAdapter'
+    ss.dependency 'FLAD/FLAdTpAdapter'
+    ss.vendored_frameworks = 'FLAD/FLAdBigoAdapter.xcframework'
+  end
+  
   s.subspec 'FLAdTopOnAdapter' do |ss|
     ss.ios.deployment_target = '10.0'
-    ss.dependency 'AnyThinkiOS', '6.3.20'
+    ss.dependency 'TPNiOS','6.3.50'
+    ss.dependency 'TraminiSDK','6.3.30'
     ss.dependency 'FLAD/FLAdSaas'
     ss.vendored_frameworks = 'FLAD/FLAdTopOnAdapter.xcframework'
   end
   
   s.subspec 'FLAdTpAdapter' do |ss|
-    ss.ios.deployment_target = '10.0'
-    ss.dependency 'TradPlusAdSDK', '11.2.0'
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'TradPlusAdSDK', '11.3.0'
     ss.dependency 'FLAD/FLAdSaas'
     ss.vendored_frameworks = 'FLAD/FLAdTpAdapter.xcframework'
   end
   
   
   
-  s.subspec 'FLAdBigoAdapter' do |ss|
-    ss.ios.deployment_target = '10.0'
-    ss.dependency 'BigoADS'
-    ss.dependency 'FLAD/FLAdSaas'
-    ss.vendored_frameworks = 'FLAD/FLAdBigoAdapter.xcframework'
-  end
   
   s.subspec 'FLAdUnityAdapter' do |ss|
     ss.ios.deployment_target = '10.0'
