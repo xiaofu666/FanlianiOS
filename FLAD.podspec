@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FLAD"
-  s.version      = "2.7.7.7"
+  s.version      = "2.7.7.8"
   s.summary      = "Mobile App Aggregation Ad SDK of Fanlian SDK for iOS."
   s.description  = <<-DESC
             Fanlian SDK is an advertising aggregation SDK that allows you to monetize iOS applications through Mediatom advertising.
@@ -67,8 +67,8 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'FLAdBeiziAdapter' do |ss|
-    ss.ios.deployment_target = '10.0'
-    ss.dependency 'SFBeiZiSDK'
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS'
     ss.dependency 'FLAD/FLAdSaas'
     ss.vendored_frameworks = 'FLAD/FLAdBeiziAdapter.xcframework'
   end
@@ -126,6 +126,12 @@ Pod::Spec.new do |s|
     ss.dependency 'OctopusSDK'
     ss.dependency 'FLAD/FLAdSaas'
     ss.vendored_frameworks = 'FLAD/FLAdZyAdapter.xcframework'
+  end
+  
+  s.subspec 'FLAdLyAdapter' do |ss|
+    ss.ios.deployment_target = '10.0'
+    ss.dependency 'FLAD/FLAdSaas'
+    ss.vendored_frameworks = 'FLAD/FLAdLyAdapter.xcframework'
   end
   
   
@@ -227,7 +233,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'FLAdBigoAdapter' do |ss|
-    ss.ios.deployment_target = '10.0'
+    ss.ios.deployment_target = '11.0'
     ss.dependency 'BigoADS', '4.2.3'
     ss.dependency 'TradPlusAdSDK/BigoAdapter', '11.3.0'
     ss.dependency 'TPNBigoSDKAdapter', '6.3.50.2'
